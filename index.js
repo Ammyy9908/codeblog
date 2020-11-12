@@ -5,7 +5,7 @@ const { extend } = require('lodash');
 const blogRoutes = require('./routes/blog');
 
 
-const DB_URI = 'mongodb+srv://Sumit:2145255sb8@cluster0.0wij2.mongodb.net/Blog';
+const DB_URI = 'YOUR-DATABASE-URL';
 
 
 const app = express();
