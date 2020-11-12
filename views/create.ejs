@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/Head.ejs')%>
+<body>
+    <%- include('./partials/Navbar.ejs')%>
+
+    <div class="create-blog content">
+        <form action="/blogs/create" method="post">
+            <label for="image">Blog Thumbnail URL(Optional)</label>
+            <input type="text" name="image" id="image">
+            <label for="title">Blog title..</label>
+            <input type="text" name="title" id="title">
+            <label for="snippet">Blog snippet</label>
+            <input type="text" name="snippet" id="snippet">
+            <label for="bbody">Blog Body...</label>
+            <textarea name="body" id="bbody" cols="30" rows="10" required></textarea>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+
+    <%- include('./partials/Footer.ejs')%>
+
+
+</body>
+</html>
